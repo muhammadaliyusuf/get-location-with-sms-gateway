@@ -12,9 +12,6 @@ require __DIR__ . "/vendor/autoload.php";
 $number = $_POST["number"];
 $message = $_POST["message"];
 
-// close curl resource to free up system resources
-curl_close($ch);
-
 if ($_POST["provider"] === "infobip") { // Infobib
 
     $base_url = "9lny4d.api.infobip.com";
